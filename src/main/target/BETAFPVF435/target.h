@@ -23,11 +23,11 @@
 #define TARGET_BOARD_IDENTIFIER "BHER"
 #define USBD_PRODUCT_STRING     "BETAFPVF435"
 
-#define LED0                PB5
+//#define LED0                PB5
 
-#define USE_BEEPER
-#define BEEPER              PB4
-#define BEEPER_INVERTED
+//#define USE_BEEPER
+//#define BEEPER              PB4
+//#define BEEPER_INVERTED
 
 //#define ENABLE_DSHOT_DMAR       DSHOT_DMAR_AUTO
 //#define DSHOT_BITBANG_DEFAULT   DSHOT_BITBANG_AUTO
@@ -51,10 +51,10 @@
 //#define ENSURE_MPU_DATA_READY_IS_LOW
 
 // MPU6000
-#define USE_IMU_MPU6000
-#define IMU_MPU6000_ALIGN       CW270_DEG 
-#define MPU6000_SPI_BUS         BUS_SPI1
-#define MPU6000_CS_PIN          SPI1_NSS_PIN
+//#define USE_IMU_MPU6000
+//#define IMU_MPU6000_ALIGN       CW270_DEG 
+//#define MPU6000_SPI_BUS         BUS_SPI1
+//#define MPU6000_CS_PIN          SPI1_NSS_PIN
 
 // ICM42605/ICM42688P
 #define USE_IMU_ICM42605
@@ -63,10 +63,10 @@
 #define ICM42605_CS_PIN         SPI1_NSS_PIN
 
 //#define USE_ACC
-#define USE_IMU_BMI270
-#define IMU_BMI270_ALIGN      CW270_DEG
-#define BMI270_SPI_BUS        BUS_SPI1
-#define BMI270_CS_PIN         SPI1_NSS_PIN
+//#define USE_IMU_BMI270
+//#define IMU_BMI270_ALIGN      CW270_DEG
+//#define BMI270_SPI_BUS        BUS_SPI1
+//#define BMI270_CS_PIN         SPI1_NSS_PIN
 
 // *************** Baro **************************
 #define USE_BARO
@@ -119,8 +119,8 @@
 // I2C
 #define USE_I2C
 #define USE_I2C_DEVICE_2
-#define I2C2_SCL                PB10        // SCL pad
-#define I2C2_SDA                PB11        // SDA pad
+#define I2C2_SCL                PC6        // SCL pad
+#define I2C2_SDA                PC7        // SDA pad
 #define USE_I2C_PULLUP
 
 #define USE_BARO
@@ -158,9 +158,9 @@
 #define UART5_RX_PIN            PD2
 #define UART5_TX_PIN            PD2
 
-#define USE_UART6
-#define UART6_RX_PIN            PC7
-#define UART6_TX_PIN            PC6
+//#define USE_UART6
+//#define UART6_RX_PIN            PC7
+//#define UART6_TX_PIN            PC6
 
 #define SERIAL_PORT_COUNT       6
 
@@ -171,7 +171,7 @@
 // *************** ADC *****************************
 #define USE_ADC
 #define ADC_INSTANCE            ADC1
-#define ADC1_DMA_STREAM             DMA2_CHANNEL5
+#define ADC1_DMA_STREAM             DMA1_CHANNEL1
 #define ADC_CHANNEL1_PIN        PC2
 #define ADC_CHANNEL2_PIN        PC1
 #define ADC_CHANNEL3_PIN        PC0
@@ -182,9 +182,9 @@
 #define USE_LED_STRIP
 #define WS2811_PIN              PB6
 
-#define DEFAULT_FEATURES        (FEATURE_TX_PROF_SEL | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_OSD | FEATURE_LED_STRIP )
-#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
+#define DEFAULT_FEATURES        (FEATURE_TX_PROF_SEL | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_OSD )
+//#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+//#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 
 #define VBAT_SCALE_DEFAULT          110
 #define CURRENT_METER_SCALE_DEFAULT 800
@@ -197,10 +197,11 @@
 #define TARGET_IO_PORTH         (BIT(1)|BIT(2)|BIT(3))
 
 
-#define MAX_PWM_OUTPUT_PORTS    8
+#define MAX_PWM_OUTPUT_PORTS    6
 
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
 #define USE_DSHOT
 #define USE_ESC_SENSOR
 #define USE_ESCSERIAL
 #define USE_RPM_FILTER
+#define USE_TIMER_MAP_PRINT
