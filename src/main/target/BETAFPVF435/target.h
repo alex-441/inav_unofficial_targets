@@ -187,7 +187,7 @@
 //#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 
 #define VBAT_SCALE_DEFAULT          1100
-#define CURRENT_METER_SCALE_DEFAULT 800
+#define CURRENT_METER_SCALE         800
 
 #define TARGET_IO_PORTA         0xffff
 #define TARGET_IO_PORTB         0xffff
