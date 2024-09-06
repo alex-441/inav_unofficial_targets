@@ -172,8 +172,8 @@
 #define USE_ADC
 #define ADC_INSTANCE            ADC1
 #define ADC1_DMA_STREAM             DMA2_CHANNEL5
-#define ADC_CHANNEL_1_PIN        PC2
-#define ADC_CHANNEL_2_PIN        PC1
+#define ADC_CHANNEL_1_PIN        PC1
+#define ADC_CHANNEL_2_PIN        PC2
 //#define ADC_CHANNEL_3_PIN        PC0
 #define VBAT_ADC_CHANNEL            ADC_CHN_2
 #define CURRENT_METER_ADC_CHANNEL   ADC_CHN_1
