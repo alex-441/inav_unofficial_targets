@@ -119,8 +119,8 @@
 // I2C
 #define USE_I2C
 #define USE_I2C_DEVICE_2
-#define I2C2_SCL                PC6        // SCL pad
-#define I2C2_SDA                PC7        // SDA pad
+#define I2C2_SCL                PC13        // SCL pad
+#define I2C2_SDA                PC14        // SDA pad
 #define USE_I2C_PULLUP
 
 #define USE_BARO
@@ -136,7 +136,7 @@
 // *************** UART *****************************
 #define USE_VCP
 #define USE_USB_DETECT
-#define USB_DETECT_PIN          PC5
+//#define USB_DETECT_PIN          PC5
 
 
 #define USE_UART1
@@ -146,21 +146,21 @@
 #define USE_UART3
 #define UART3_RX_PIN            PB11
 #define UART3_TX_PIN            PB10
-#define USE_UART_INVERTER
-#define INVERTER_PIN_UART3_RX   PC9
-#define INVERTER_PIN_USART3_RX   PC9
+//#define USE_UART_INVERTER
+//#define INVERTER_PIN_UART3_RX   PC9
+//#define INVERTER_PIN_USART3_RX   PC9
 
 #define USE_UART4
 #define UART4_RX_PIN            PA1
 #define UART4_TX_PIN            PA0
 
-//#define USE_UART5
-//#define UART5_RX_PIN            PD2
-//#define UART5_TX_PIN            PD2
+#define USE_UART5
+#define UART5_RX_PIN            PD2
+#define UART5_TX_PIN            PD2
 
-//#define USE_UART6
-//#define UART6_RX_PIN            PC7
-//#define UART6_TX_PIN            PC6
+#define USE_UART6
+#define UART6_RX_PIN            PC7
+#define UART6_TX_PIN            PB6
 
 #define SERIAL_PORT_COUNT       6
 
@@ -171,7 +171,7 @@
 // *************** ADC *****************************
 #define USE_ADC
 #define ADC_INSTANCE            ADC1
-#define ADC1_DMA_STREAM             DMA2_CHANNEL1
+//#define ADC1_DMA_STREAM             DMA2_CHANNEL1
 #define ADC_CHANNEL1_PIN        PC1
 #define ADC_CHANNEL2_PIN        PC2
 //#define ADC_CHANNEL3_PIN        PC0
@@ -180,7 +180,7 @@
 //#define RSSI_ADC_CHANNEL        ADC_CHN_3
 
 #define USE_LED_STRIP
-#define WS2811_PIN              PB6
+#define WS2811_PIN              PC6
 
 #define DEFAULT_FEATURES        (FEATURE_TX_PROF_SEL | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_OSD )
 //#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
@@ -201,7 +201,7 @@
 
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
 #define USE_DSHOT
-//#define USE_ESC_SENSOR
+#define USE_ESC_SENSOR
 //#define USE_ESCSERIAL
 //#define USE_RPM_FILTER
 #define USE_TIMER_MAP_PRINT
