@@ -171,9 +171,9 @@
 // *************** ADC *****************************
 #define USE_ADC
 #define ADC_INSTANCE            ADC1
-//#define ADC1_DMA_STREAM             DMA2_CHANNEL1
-#define ADC_CHANNEL1_PIN        PC1
-#define ADC_CHANNEL2_PIN        PC2
+#define ADC1_DMA_STREAM             DMA2_CHANNEL5
+#define ADC_CHANNEL1_PIN        PC2
+#define ADC_CHANNEL2_PIN        PC1
 //#define ADC_CHANNEL3_PIN        PC0
 #define VBAT_ADC_CHANNEL            ADC_CHN_2
 #define CURRENT_METER_ADC_CHANNEL   ADC_CHN_1
@@ -187,7 +187,7 @@
 //#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 
 #define VBAT_SCALE_DEFAULT          1100
-#define CURRENT_METER_SCALE_DEFAULT 1000
+#define CURRENT_METER_SCALE_DEFAULT 800
 
 #define TARGET_IO_PORTA         0xffff
 #define TARGET_IO_PORTB         0xffff
