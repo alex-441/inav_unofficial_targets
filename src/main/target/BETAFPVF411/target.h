@@ -116,7 +116,7 @@
 //#define WS2811_PIN                      PA8
 
 // ***************  OTHERS *************************
-#define DEFAULT_FEATURES                (FEATURE_OSD | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_CURRENT_METER)
+#define DEFAULT_FEATURES                (FEATURE_OSD | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_CURRENT_METER | FEATURE_SOFTSERIAL)
 
 #define USE_DSHOT
 #define USE_ESC_SENSOR
