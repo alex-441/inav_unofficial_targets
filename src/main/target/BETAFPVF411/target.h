@@ -88,11 +88,11 @@
 
 #define USE_SOFTSERIAL1
 #define SOFTSERIAL_1_TX_PIN     PA8
-#define SOFTSERIAL_1_RX_PIN     PA8
+#define SOFTSERIAL_1_RX_PIN     PA15
 
 #define USE_SOFTSERIAL2
 #define SOFTSERIAL_2_TX_PIN     PB1
-#define SOFTSERIAL_2_RX_PIN     PB1
+#define SOFTSERIAL_2_RX_PIN     PB2
 
 #define SERIAL_PORT_COUNT       5
 
