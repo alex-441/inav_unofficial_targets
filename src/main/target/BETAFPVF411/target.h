@@ -88,17 +88,17 @@
 
 #define USE_SOFTSERIAL1
 #define SOFTSERIAL_1_TX_PIN     PA8
-#define SOFTSERIAL_1_RX_PIN     PA15
+#define SOFTSERIAL_1_RX_PIN     PB1
 
-#define USE_SOFTSERIAL2
-#define SOFTSERIAL_2_TX_PIN     PB1
-#define SOFTSERIAL_2_RX_PIN     PB2
+//#define USE_SOFTSERIAL2
+//#define SOFTSERIAL_2_TX_PIN     PB1
+//#define SOFTSERIAL_2_RX_PIN     PB2
 
 #define SERIAL_PORT_COUNT       5
 
-//#define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
-//#define SERIALRX_PROVIDER       SERIALRX_CRSF
-//#define SERIALRX_UART           SERIAL_PORT_USART1
+#define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
+#define SERIALRX_PROVIDER       SERIALRX_CRSF
+#define SERIALRX_UART           SERIAL_PORT_USART1
 
 // *************** ADC *****************************
 #define USE_ADC
