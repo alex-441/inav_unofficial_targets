@@ -37,6 +37,11 @@
 #define SPI2_MISO_PIN  		   PB14
 #define SPI2_MOSI_PIN  		   PB15
 
+#define USE_SPI_DEVICE_3  //SPI RX 
+#define SPI3_SCK_PIN           PB3
+#define SPI3_MISO_PIN  		   PB4
+#define SPI3_MOSI_PIN  		   PB5
+
 // *************** SPI Gyro & ACC **********************
 //#define USE_IMU_MPU6000
 //#define MPU6000_CS_PIN          PA4
@@ -96,9 +101,20 @@
 
 #define SERIAL_PORT_COUNT       4
 
-#define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
-#define SERIALRX_PROVIDER       SERIALRX_CRSF
-#define SERIALRX_UART           SERIAL_PORT_USART1
+#define USE_RX_SPI
+#define USE_RX_ELERES
+//#define RX_NSS_PIN                  PC15
+//#define RX_NSS_GPIO_CLK_PERIPHERAL  RCC_APB2Periph_GPIOC
+#define RX_CS_PIN                   PA15
+#define RX_SCK_PIN                  PB3
+#define RX_MOSI_PIN                 PB5
+#define RX_MISO_PIN                 PB4
+#define RX_SPI_INSTANCE             SPI3
+//#define RX_IRQ_PIN                  PB3
+
+//#define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
+//#define SERIALRX_PROVIDER       SERIALRX_CRSF
+//#define SERIALRX_UART           SERIAL_PORT_USART1
 
 // *************** ADC *****************************
 #define USE_ADC
