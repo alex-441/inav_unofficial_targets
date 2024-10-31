@@ -90,6 +90,7 @@
 // *************** ADC *****************************
 #define USE_ADC
 #define ADC_INSTANCE                    ADC1
+#define ADC1_DMA_STREAM                 DMA2_CHANNEL4
 #define ADC_CHANNEL_1_PIN               PB0
 #define ADC_CHANNEL_2_PIN               PB1
 
@@ -99,8 +100,8 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 
-#define VBAT_SCALE_DEFAULT            111
-#define CURRENT_METER_SCALE_DEFAULT   438
+#define VBAT_SCALE_DEFAULT              111
+#define CURRENT_METER_SCALE_DEFAULT     438
 
 // *************** LED2812 ************************
 #define USE_LED_STRIP
