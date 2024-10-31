@@ -90,7 +90,7 @@
 // *************** ADC *****************************
 #define USE_ADC
 #define ADC_INSTANCE                    ADC1
-#define ADC1_DMA_STREAM                 DMA2_CHANNEL4
+//#define ADC1_DMA_STREAM                 DMA2_CHANNEL4
 #define ADC_CHANNEL_1_PIN               PB0
 #define ADC_CHANNEL_2_PIN               PB1
 
@@ -111,7 +111,7 @@
 #define DEFAULT_FEATURES                (FEATURE_TX_PROF_SEL | FEATURE_SOFTSERIAL | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX)
 
 #define USE_DSHOT
-#define USE_RPM_FILTER
+//#define USE_RPM_FILTER
 //#define USE_ESC_SENSOR
 //#define USE_SERIAL_4WAY_BLHELI_INTERFACE
 
