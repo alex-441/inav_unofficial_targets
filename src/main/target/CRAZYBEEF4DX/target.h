@@ -91,8 +91,8 @@
 #define USE_ADC
 #define ADC_INSTANCE                    ADC1
 //#define ADC1_DMA_STREAM                 DMA2_CHANNEL4
-#define ADC_CHANNEL_1_PIN               PB0
-#define ADC_CHANNEL_2_PIN               PB1
+#define ADC_CHANNEL_1_PIN               PB1
+#define ADC_CHANNEL_2_PIN               PB0
 
 #define VBAT_ADC_CHANNEL                ADC_CHN_2
 #define CURRENT_METER_ADC_CHANNEL       ADC_CHN_1
@@ -108,7 +108,7 @@
 #define WS2811_PIN                      PA8
 
 // ***************  OTHERS *************************
-#define DEFAULT_FEATURES                (FEATURE_TX_PROF_SEL | FEATURE_SOFTSERIAL | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX)
+#define DEFAULT_FEATURES                (FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX)
 
 #define USE_DSHOT
 //#define USE_RPM_FILTER
