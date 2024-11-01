@@ -32,9 +32,9 @@
 
 timerHardware_t timerHardware[] = {
     DEF_TIM(TIM2,  CH3, PB10,    TIM_USE_OUTPUT_AUTO, 0, 0),
-    DEF_TIM(TIM4,  CH3, PB8,    TIM_USE_OUTPUT_AUTO, 0, 0),
     DEF_TIM(TIM4,  CH1, PB6,    TIM_USE_OUTPUT_AUTO, 0, 0),
     DEF_TIM(TIM4,  CH2, PB7,    TIM_USE_OUTPUT_AUTO, 0, 0),
+    DEF_TIM(TIM4,  CH3, PB8,    TIM_USE_OUTPUT_AUTO, 0, 0),
 
     //DEF_TIM(TMR1, CH1, PA8, TIM_USE_OUTPUT_AUTO | TIM_USE_ANY, 0, 5),  // TMR1_CH3 motor 6
 
