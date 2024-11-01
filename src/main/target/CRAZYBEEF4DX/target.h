@@ -17,7 +17,7 @@
 
 #pragma once
 
-#define TARGET_BOARD_IDENTIFIER "B411"
+#define TARGET_BOARD_IDENTIFIER "HAMO"
 #define USBD_PRODUCT_STRING     "CRAZYBEEF4DX"
 
 #define LED0                    PC13
