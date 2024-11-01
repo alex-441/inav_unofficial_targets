@@ -51,9 +51,9 @@
 #define I2C1_SCL                PB11
 #define I2C1_SDA                PB9
 
-#define USE_BARO
-#define BARO_I2C_BUS		    BUS_I2C1
-#define USE_BARO_ALL
+//#define USE_BARO
+//#define BARO_I2C_BUS		    BUS_I2C1
+//#define USE_BARO_ALL
 
 #define USE_MAG
 #define MAG_I2C_BUS             BUS_I2C1
@@ -62,7 +62,7 @@
 // *************** SPI FLASH **************************
 #define USE_FLASHFS
 #define USE_FLASH_M25P16
-#define M25P16_CS_PIN           PB12
+#define M25P16_CS_PIN           PA14
 #define M25P16_SPI_BUS          BUS_SPI2
 #define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
 
@@ -94,11 +94,11 @@
 #define ADC_CHANNEL_1_PIN               PB0
 #define ADC_CHANNEL_2_PIN               PB1
 
-#define VBAT_ADC_CHANNEL                ADC_CHN_1
-#define CURRENT_METER_ADC_CHANNEL       ADC_CHN_2
+#define VBAT_ADC_CHANNEL                ADC_CHN_2
+#define CURRENT_METER_ADC_CHANNEL       ADC_CHN_1
 
-#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
+//#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+//#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 
 #define VBAT_SCALE_DEFAULT              111
 #define CURRENT_METER_SCALE_DEFAULT     438
