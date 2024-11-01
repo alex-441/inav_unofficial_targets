@@ -15,6 +15,9 @@
  * along with Cleanflight.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
+#include <stdint.h>
+
 #include <stdbool.h>
 #include <platform.h>
 #include "drivers/io.h"
@@ -22,6 +25,9 @@
 #include "drivers/timer.h"
 #include "drivers/bus.h"
 #include "drivers/pwm_mapping.h"
+#include "drivers/pinio.h"
+
+//#include "drivers/sensor.h"
 
 
 timerHardware_t timerHardware[] = {
