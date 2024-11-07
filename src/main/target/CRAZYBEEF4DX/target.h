@@ -51,9 +51,9 @@
 #define I2C3_SCL                PA8
 #define I2C3_SDA                PC9
 
-//#define USE_BARO
-//#define BARO_I2C_BUS		    BUS_I2C1
-//#define USE_BARO_ALL
+#define USE_BARO
+#define BARO_I2C_BUS		    BUS_I2C3
+#define USE_BARO_ALL
 
 #define USE_MAG
 #define MAG_I2C_BUS             BUS_I2C3
