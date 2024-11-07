@@ -47,16 +47,16 @@
 // *************** Baro *****************************
 
 #define USE_I2C
-#define USE_I2C_DEVICE_1
-#define I2C1_SCL                PB11
-#define I2C1_SDA                PB9
+#define USE_I2C_DEVICE_3
+#define I2C3_SCL                PA8
+#define I2C3_SDA                PC9
 
 //#define USE_BARO
 //#define BARO_I2C_BUS		    BUS_I2C1
 //#define USE_BARO_ALL
 
 #define USE_MAG
-#define MAG_I2C_BUS             BUS_I2C1
+#define MAG_I2C_BUS             BUS_I2C3
 #define USE_MAG_ALL
 
 // *************** SPI FLASH **************************
@@ -100,19 +100,19 @@
 
 
 #define VBAT_SCALE_DEFAULT              1140
-#define CURRENT_METER_SCALE_DEFAULT     438
+#define CURRENT_METER_SCALE_DEFAULT     423
 
 // *************** LED2812 ************************
-#define USE_LED_STRIP
-#define WS2811_PIN                      PA8
+//#define USE_LED_STRIP
+//#define WS2811_PIN                      PA8
 
 // ***************  OTHERS *************************
 #define DEFAULT_FEATURES                (FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX)
 
 #define USE_DSHOT
 #define USE_RPM_FILTER
-//#define USE_ESC_SENSOR
-//#define USE_SERIAL_4WAY_BLHELI_INTERFACE
+#define USE_ESC_SENSOR
+#define USE_SERIAL_4WAY_BLHELI_INTERFACE
 
 #define TARGET_IO_PORTA         0xffff
 #define TARGET_IO_PORTB         0xffff
