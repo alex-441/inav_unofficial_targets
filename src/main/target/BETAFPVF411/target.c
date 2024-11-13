@@ -30,7 +30,7 @@ timerHardware_t timerHardware[] = {
     DEF_TIM(TIM4,  CH1, PB6,    TIM_USE_OUTPUT_AUTO, 0, 0),
     DEF_TIM(TIM4,  CH2, PB7,    TIM_USE_OUTPUT_AUTO, 0, 0),
 
-    DEF_TIM(TIM1, CH1, PA8, TIM_USE_LED | TIM_USE_ANY, 0, 1),  // TIM1_CH1 for LED Strip or SoftSerial
+    DEF_TIM(TIM1, CH1, PA8, TIM_USE_LED | TIM_USE_ANY, 0, 0),  // TIM1_CH1 for LED Strip or SoftSerial
 };
 
 const int timerHardwareCount = sizeof(timerHardware) / sizeof(timerHardware[0]);
