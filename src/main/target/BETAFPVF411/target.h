@@ -21,6 +21,7 @@
 #define USBD_PRODUCT_STRING     "BETAFPVF411"
 
 #define LED0                    PC13
+#define LED1                    PC14
 
 #define BEEPER                  PB2
 #define BEEPER_INVERTED
@@ -38,10 +39,10 @@
 #define SPI2_MOSI_PIN  		   PB15
 
 // *************** SPI Gyro & ACC **********************
-#define USE_IMU_MPU6000
-#define MPU6000_CS_PIN          PA4
-#define MPU6000_SPI_BUS         BUS_SPI1
-#define IMU_MPU6000_ALIGN       CW180_DEG
+//#define USE_IMU_MPU6000
+//#define MPU6000_CS_PIN          PA4
+//#define MPU6000_SPI_BUS         BUS_SPI1
+//#define IMU_MPU6000_ALIGN       CW180_DEG
 
 #define USE_IMU_BMI270
 #define IMU_BMI270_ALIGN                CW90_DEG
@@ -71,7 +72,7 @@
 // *************** SPI FLASH **************************
 #define USE_FLASHFS
 #define USE_FLASH_M25P16
-#define M25P16_CS_PIN           PB2
+#define M25P16_CS_PIN           PA0
 #define M25P16_SPI_BUS          BUS_SPI2
 #define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
 
@@ -116,7 +117,7 @@
 #define WS2811_PIN                      PA8
 
 // ***************  OTHERS *************************
-#define DEFAULT_FEATURES                (FEATURE_TX_PROF_SEL | FEATURE_OSD | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX)
+#define DEFAULT_FEATURES                (FEATURE_TX_PROF_SEL | FEATURE_OSD | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX | FEATURE_SOFTSERIAL)
 
 #define USE_DSHOT
 #define USE_ESC_SENSOR
