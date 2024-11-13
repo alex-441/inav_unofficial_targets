@@ -88,14 +88,14 @@
 #define UART2_RX_PIN            PA3
 
 #define USE_SOFTSERIAL1
-#define SOFTSERIAL_1_TX_PIN     PB3
+#define SOFTSERIAL_1_TX_PIN     PA8
 #define SOFTSERIAL_1_RX_PIN     PB3
 
-#define USE_SOFTSERIAL2
-#define SOFTSERIAL_2_TX_PIN     PB10
-#define SOFTSERIAL_2_RX_PIN     PB10
+//#define USE_SOFTSERIAL2
+//#define SOFTSERIAL_2_TX_PIN     PB10
+//#define SOFTSERIAL_2_RX_PIN     PB10
 
-#define SERIAL_PORT_COUNT       5
+#define SERIAL_PORT_COUNT       4
 
 #define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
 #define SERIALRX_PROVIDER       SERIALRX_CRSF
@@ -104,8 +104,8 @@
 // *************** ADC *****************************
 #define USE_ADC
 #define ADC_INSTANCE                    ADC1
-#define ADC_CHANNEL_1_PIN               PB0
-#define ADC_CHANNEL_2_PIN               PB1
+#define ADC_CHANNEL_1_PIN               PB1
+#define ADC_CHANNEL_2_PIN               PB0
 
 #define VBAT_ADC_CHANNEL                ADC_CHN_1
 #define CURRENT_METER_ADC_CHANNEL       ADC_CHN_2
@@ -113,8 +113,8 @@
 #define VBAT_SCALE_DEFAULT              1100
 
 // *************** LED2812 ************************
-#define USE_LED_STRIP
-#define WS2811_PIN                      PA8
+//#define USE_LED_STRIP
+//#define WS2811_PIN                      PA8
 
 // ***************  OTHERS *************************
 #define DEFAULT_FEATURES                (FEATURE_TX_PROF_SEL | FEATURE_OSD | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX | FEATURE_SOFTSERIAL)
