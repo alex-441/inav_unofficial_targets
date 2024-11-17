@@ -104,8 +104,8 @@
 // *************** ADC *****************************
 #define USE_ADC
 #define ADC_INSTANCE                    ADC1
-#define ADC_CHANNEL_1_PIN               PB1
-#define ADC_CHANNEL_2_PIN               PB0
+#define ADC_CHANNEL_1_PIN               PB0
+#define ADC_CHANNEL_2_PIN               PB1
 
 #define VBAT_ADC_CHANNEL                ADC_CHN_2
 #define CURRENT_METER_ADC_CHANNEL       ADC_CHN_1
