@@ -37,6 +37,7 @@
 #include "config/parameter_group_ids.h"
 
 #include "drivers/system.h"
+#include "drivers/rx_spi.h"
 #include "drivers/pwm_mapping.h"
 #include "drivers/pwm_output.h"
 #include "drivers/serial.h"
@@ -58,6 +59,7 @@
 #include "io/osd.h"
 
 #include "rx/rx.h"
+#include "rx/rx_spi.h"
 
 #include "flight/mixer.h"
 #include "flight/servos.h"
@@ -79,6 +81,9 @@
 
 #ifndef DEFAULT_FEATURES
 #define DEFAULT_FEATURES 0
+#endif
+#ifndef RX_SPI_DEFAULT_PROTOCOL
+#define RX_SPI_DEFAULT_PROTOCOL 0
 #endif
 
 #define BRUSHED_MOTORS_PWM_RATE 16000
