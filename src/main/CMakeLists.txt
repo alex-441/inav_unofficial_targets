@@ -242,6 +242,8 @@ main_sources(COMMON_SRC
     drivers/resource.h
     drivers/rcc.c
     drivers/rcc.h
+    drivers/rx_spi.c
+    drivers/rx_spi.h
     drivers/serial.c
     drivers/serial.h
     drivers/sound_beeper.c
@@ -387,6 +389,8 @@ main_sources(COMMON_SRC
 
     rx/crsf.c
     rx/crsf.h
+    rx/eleres.c
+    rx/eleres.h
     rx/fport.c
     rx/fport.h
     rx/fport2.c
@@ -408,6 +412,8 @@ main_sources(COMMON_SRC
     rx/frsky_crc.h
     rx/rx.c
     rx/rx.h
+    rx/rx_spi.c
+    rx/rx_spi.h
     rx/sbus.c
     rx/sbus.h
     rx/sbus_channels.c
