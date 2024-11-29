@@ -60,9 +60,9 @@
 #define I2C1_SCL                PC0
 #define I2C1_SDA                PC1
 
-//#define USE_BARO
-//#define BARO_I2C_BUS		    BUS_I2C1
-//#define USE_BARO_ALL
+#define USE_BARO
+#define BARO_I2C_BUS		    BUS_I2C1
+#define USE_BARO_ALL
 
 #define USE_MAG
 #define MAG_I2C_BUS             BUS_I2C1
@@ -103,9 +103,9 @@
 
 #define USE_RX_SPI
 #define USE_RX_ELERES
-//#define RX_NSS_PIN                  PC15
+#define RX_NSS_PIN                  PA15
 //#define RX_NSS_GPIO_CLK_PERIPHERAL  RCC_APB2Periph_GPIOC
-#define RX_CS_PIN                   PA15
+//#define RX_CS_PIN                   PA15
 #define RX_SCK_PIN                  PB3
 #define RX_MOSI_PIN                 PB5
 #define RX_MISO_PIN                 PB4
