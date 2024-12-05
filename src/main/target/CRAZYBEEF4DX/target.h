@@ -77,11 +77,11 @@
 #define UART2_TX_PIN            PA2
 #define UART2_RX_PIN            PA3
 
-//#define USE_SOFTSERIAL1
-//#define SOFTSERIAL_1_TX_PIN     PC13
-//#define SOFTSERIAL_1_RX_PIN     PB2
+#define USE_SOFTSERIAL1
+#define SOFTSERIAL_1_TX_PIN     PC13
+#define SOFTSERIAL_1_RX_PIN     PA0
 
-#define SERIAL_PORT_COUNT       3
+#define SERIAL_PORT_COUNT       4
 
 #define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
 #define SERIALRX_PROVIDER       SERIALRX_CRSF
@@ -107,7 +107,7 @@
 //#define WS2811_PIN                      PA8
 
 // ***************  OTHERS *************************
-#define DEFAULT_FEATURES                (FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX)
+#define DEFAULT_FEATURES                (FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_BLACKBOX | FEATURE_SOFTSERIAL)
 
 #define USE_DSHOT
 #define USE_RPM_FILTER
