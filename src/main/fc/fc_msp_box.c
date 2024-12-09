@@ -208,7 +208,7 @@ void initActiveBoxIds(void)
             ADD_ACTIVE_BOX(BOXHEADFREE);
             ADD_ACTIVE_BOX(BOXHEADADJ);
         }
-        if (sensors(SENSOR_BARO) && sensors(SENSOR_RANGEFINDER)) {
+        if (sensors(SENSOR_BARO) || sensors(SENSOR_RANGEFINDER)) {
             ADD_ACTIVE_BOX(BOXSURFACE);
         }
         ADD_ACTIVE_BOX(BOXFPVANGLEMIX);
