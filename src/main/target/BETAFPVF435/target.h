@@ -23,11 +23,11 @@
 #define TARGET_BOARD_IDENTIFIER "BHER"
 #define USBD_PRODUCT_STRING     "BETAFPVF435"
 
-//#define LED0                PB5
+#define LED0                PB5
 
-//#define USE_BEEPER
-//#define BEEPER              PB4
-//#define BEEPER_INVERTED
+#define USE_BEEPER
+#define BEEPER              PB4
+#define BEEPER_INVERTED
 
 #define ENABLE_DSHOT_DMAR       DSHOT_DMAR_AUTO
 #define DSHOT_BITBANG_DEFAULT   DSHOT_BITBANG_AUTO
@@ -42,11 +42,11 @@
 #define SPI1_MOSI_PIN           PA7
 
 #define SPI1_NSS_PIN           PA4
-//#define GYRO_1_SPI_INSTANCE     SPI1
+#define GYRO_1_SPI_INSTANCE     SPI1
 
-//#define USE_EXTI
-//#define USE_GYRO_EXTI
-//#define GYRO_1_EXTI_PIN         PC4
+#define USE_EXTI
+#define USE_GYRO_EXTI
+#define GYRO_1_EXTI_PIN         PC4
 //#define USE_MPU_DATA_READY_SIGNAL
 //#define ENSURE_MPU_DATA_READY_IS_LOW
 
@@ -105,10 +105,10 @@
 #define W25M02G_CS_PIN FLASH_CS_PIN
 
 // *************** OSD *****************************
-//#define USE_SPI_DEVICE_3
-//#define SPI3_SCK_PIN            PC10
-//#define SPI3_MISO_PIN           PC11
-//#define SPI3_MOSI_PIN           PC12
+#define USE_SPI_DEVICE_3
+#define SPI3_SCK_PIN            PC10
+#define SPI3_MISO_PIN           PC11
+#define SPI3_MOSI_PIN           PC12
 
 //#if 0
 //#define USE_MAX7456
@@ -124,7 +124,7 @@
 #define USE_I2C_PULLUP
 
 #define USE_BARO
-#define BARO_I2C_BUS            BUS_I2C2
+//#define BARO_I2C_BUS            BUS_I2C2
 #define USE_BARO_BMP280
 //#define USE_BARO_DPS310
 
@@ -135,7 +135,7 @@
 
 // *************** UART *****************************
 #define USE_VCP
-#define USE_USB_DETECT
+//#define USE_USB_DETECT
 //#define USB_DETECT_PIN          PC5
 
 
@@ -158,11 +158,11 @@
 //#define UART5_RX_PIN            PD2
 //#define UART5_TX_PIN            PD2
 
-#define USE_UART6
-#define UART6_RX_PIN            PC7
-#define UART6_TX_PIN            PB6
+//#define USE_UART6
+//#define UART6_RX_PIN            PC7
+//#define UART6_TX_PIN            PB6
 
-#define SERIAL_PORT_COUNT       5
+#define SERIAL_PORT_COUNT       4
 
 #define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
 #define SERIALRX_PROVIDER       SERIALRX_CRSF
@@ -173,14 +173,14 @@
 #define ADC_INSTANCE            ADC1
 #define ADC1_DMA_STREAM             DMA2_CHANNEL5
 //#define ADC_CHANNEL_1_PIN        PC1
-#define ADC_CHANNEL_2_PIN        PC2
+#define ADC_CHANNEL_2_PIN        PC1
 //#define ADC_CHANNEL_3_PIN        PC0
 #define VBAT_ADC_CHANNEL            ADC_CHN_2
 //#define CURRENT_METER_ADC_CHANNEL   ADC_CHN_1
 //#define RSSI_ADC_CHANNEL        ADC_CHN_3
 
 #define USE_LED_STRIP
-#define WS2811_PIN              PC6
+#define WS2811_PIN              PB6
 
 #define DEFAULT_FEATURES        (FEATURE_TX_PROF_SEL | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_OSD )
 //#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
