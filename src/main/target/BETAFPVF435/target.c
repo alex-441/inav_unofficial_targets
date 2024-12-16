@@ -30,7 +30,7 @@
 #include "drivers/sensor.h"
 
 timerHardware_t timerHardware[] = {
-    DEF_TIM(TMR3, CH3, PB0, TIM_USE_MOTOR, 0, 1),  // TMR3_CH3 motor 1
+    DEF_TIM(TMR3, CH3, PB0, TIM_USE_MOTOR, 0, 0),  // TMR3_CH3 motor 1
     DEF_TIM(TMR3, CH4, PB1, TIM_USE_MOTOR, 0, 2),  // TMR3_CH4 motor 2
     DEF_TIM(TMR2, CH4, PA3, TIM_USE_MOTOR, 0, 7),  // TMR2_CH4 motor 3
     DEF_TIM(TMR2, CH3, PA2, TIM_USE_MOTOR, 0, 6),  // TMR2_CH3 motor 4
