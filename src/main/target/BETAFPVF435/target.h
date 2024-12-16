@@ -29,8 +29,8 @@
 //#define BEEPER              PB4
 //#define BEEPER_INVERTED
 
-//#define ENABLE_DSHOT_DMAR       DSHOT_DMAR_AUTO
-//#define DSHOT_BITBANG_DEFAULT   DSHOT_BITBANG_AUTO
+#define ENABLE_DSHOT_DMAR       DSHOT_DMAR_AUTO
+#define DSHOT_BITBANG_DEFAULT   DSHOT_BITBANG_AUTO
 #define ENABLE_DSHOT
 
 // *************** Gyro & ACC **********************
@@ -74,9 +74,9 @@
 #define SPI3_NSS_PIN    PB3
 #define BMP280_SPI_BUS  BUS_SPI3
 #define BMP280_CS_PIN  SPI3_NSS_PIN
-#define USE_BARO_DPS310
-#define DPS310_SPI_BUS  BUS_SPI3
-#define DPS310_CS_PIN   SPI3_NSS_PIN
+//#define USE_BARO_DPS310
+//#define DPS310_SPI_BUS  BUS_SPI3
+//#define DPS310_CS_PIN   SPI3_NSS_PIN
 
 // *************** BLACKBOX **************************
 #define USE_SPI_DEVICE_2
@@ -105,16 +105,16 @@
 #define W25M02G_CS_PIN FLASH_CS_PIN
 
 // *************** OSD *****************************
-#define USE_SPI_DEVICE_3
-#define SPI3_SCK_PIN            PC10
-#define SPI3_MISO_PIN           PC11
-#define SPI3_MOSI_PIN           PC12
+//#define USE_SPI_DEVICE_3
+//#define SPI3_SCK_PIN            PC10
+//#define SPI3_MISO_PIN           PC11
+//#define SPI3_MOSI_PIN           PC12
 
-#if 0
-#define USE_MAX7456
-#define MAX7456_SPI_BUS         BUS_SPI3
-#define MAX7456_CS_PIN          PA15
-#endif
+//#if 0
+//#define USE_MAX7456
+//#define MAX7456_SPI_BUS         BUS_SPI3
+//#define MAX7456_CS_PIN          PA15
+//#endif
 
 // I2C
 #define USE_I2C
@@ -126,7 +126,7 @@
 #define USE_BARO
 #define BARO_I2C_BUS            BUS_I2C2
 #define USE_BARO_BMP280
-#define USE_BARO_DPS310
+//#define USE_BARO_DPS310
 
 #define USE_MAG
 #define MAG_I2C_BUS             BUS_I2C2
@@ -154,15 +154,15 @@
 #define UART4_RX_PIN            PA1
 #define UART4_TX_PIN            PA0
 
-#define USE_UART5
-#define UART5_RX_PIN            PD2
-#define UART5_TX_PIN            PD2
+//#define USE_UART5
+//#define UART5_RX_PIN            PD2
+//#define UART5_TX_PIN            PD2
 
 #define USE_UART6
 #define UART6_RX_PIN            PC7
 #define UART6_TX_PIN            PB6
 
-#define SERIAL_PORT_COUNT       6
+#define SERIAL_PORT_COUNT       5
 
 #define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
 #define SERIALRX_PROVIDER       SERIALRX_CRSF
@@ -172,11 +172,11 @@
 #define USE_ADC
 #define ADC_INSTANCE            ADC1
 #define ADC1_DMA_STREAM             DMA2_CHANNEL5
-#define ADC_CHANNEL_1_PIN        PC1
+//#define ADC_CHANNEL_1_PIN        PC1
 #define ADC_CHANNEL_2_PIN        PC2
 //#define ADC_CHANNEL_3_PIN        PC0
 #define VBAT_ADC_CHANNEL            ADC_CHN_2
-#define CURRENT_METER_ADC_CHANNEL   ADC_CHN_1
+//#define CURRENT_METER_ADC_CHANNEL   ADC_CHN_1
 //#define RSSI_ADC_CHANNEL        ADC_CHN_3
 
 #define USE_LED_STRIP
@@ -203,5 +203,5 @@
 #define USE_DSHOT
 #define USE_ESC_SENSOR
 //#define USE_ESCSERIAL
-//#define USE_RPM_FILTER
+#define USE_RPM_FILTER
 #define USE_TIMER_MAP_PRINT
