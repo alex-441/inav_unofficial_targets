@@ -173,9 +173,9 @@
 #define ADC_INSTANCE            ADC1
 #define ADC1_DMA_STREAM             DMA2_CHANNEL5
 //#define ADC_CHANNEL_1_PIN        PC1
-#define ADC_CHANNEL_2_PIN        PC1
+#define ADC_CHANNEL_2_PIN        PC2
 //#define ADC_CHANNEL_3_PIN        PC0
-#define VBAT_ADC_CHANNEL            ADC_CHN_2
+//#define VBAT_ADC_CHANNEL            ADC_CHN_2
 //#define CURRENT_METER_ADC_CHANNEL   ADC_CHN_1
 //#define RSSI_ADC_CHANNEL        ADC_CHN_3
 
@@ -193,11 +193,11 @@
 #define TARGET_IO_PORTB         0xffff
 #define TARGET_IO_PORTC         0xffff
 #define TARGET_IO_PORTD         0xffff
-#define TARGET_IO_PORTE         BIT(2)
-#define TARGET_IO_PORTH         (BIT(1)|BIT(2)|BIT(3))
+//#define TARGET_IO_PORTE         BIT(2)
+//#define TARGET_IO_PORTH         (BIT(1)|BIT(2)|BIT(3))
 
 
-#define MAX_PWM_OUTPUT_PORTS    6
+#define MAX_PWM_OUTPUT_PORTS    4
 
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
 #define USE_DSHOT
