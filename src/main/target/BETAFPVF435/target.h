@@ -135,8 +135,8 @@
 
 // *************** UART *****************************
 #define USE_VCP
-//#define USE_USB_DETECT
-//#define USB_DETECT_PIN          PC5
+#define USE_USB_DETECT
+#define USB_DETECT_PIN          PC5
 
 
 #define USE_UART1
