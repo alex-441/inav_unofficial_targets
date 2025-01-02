@@ -621,8 +621,8 @@ static bool estimationCalculateCorrection_Z(estimationContext_t * ctx)
 
         // Altitude
         const float baroAltResidual = (isAirCushionEffectDetected ? posEstimator.state.baroGroundAlt : posEstimator.baro.alt) - posEstimator.est.pos.z;
-        ctx->estPosCorr.z += wBaro * baroAltResidual * positionEstimationConfig()->w_z_baro_p * ctx->dt;
-        ctx->estVelCorr.z += wBaro * baroAltResidual * sq(positionEstimationConfig()->w_z_baro_p) * ctx->dt;
+        //ctx->estPosCorr.z += wBaro * baroAltResidual * positionEstimationConfig()->w_z_baro_p * ctx->dt;
+        //ctx->estVelCorr.z += wBaro * baroAltResidual * sq(positionEstimationConfig()->w_z_baro_p) * ctx->dt;
 
         ctx->newEPV = updateEPE(posEstimator.est.epv, ctx->dt, posEstimator.baro.epv, positionEstimationConfig()->w_z_baro_p);
 
