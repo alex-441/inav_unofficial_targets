@@ -20,6 +20,8 @@
 #define TARGET_BOARD_IDENTIFIER "B411"
 #define USBD_PRODUCT_STRING     "BETAFPVF411"
 
+#define UID_BASE 0x1FFF7A10U
+
 #define LED0                    PC13
 #define LED1                    PC14
 
