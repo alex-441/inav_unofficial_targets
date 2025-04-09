@@ -20,7 +20,10 @@
 #define TARGET_BOARD_IDENTIFIER "B411"
 #define USBD_PRODUCT_STRING     "BETAFPVF411"
 
-#define UID_BASE 0x1FFF7A10U
+//#define UID_BASE 0x1FFF7A10U
+#define XSTR(x) STR(x)
+#define STR(x) #x
+#pragma message "The value of UID_BASE: " XSTR(UID_BASE)
 
 #define LED0                    PC13
 #define LED1                    PC14
